@@ -30,7 +30,7 @@ int main(int, char **) {
 		std::cerr << e.what() << "numbers[-2] = 0;" << '\n';
 	}
 	try {
-		numbers[MAX_VAL - 1] = 0;
+		numbers[MAX_VAL + 1] = 0;
 	} catch (const std::exception &e) {
 		std::cerr << e.what() << "numbers[MAX_VAL] = 0;" << '\n';
 	}
